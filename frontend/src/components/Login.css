@@ -1,0 +1,122 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.login-card {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 1px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-card h2 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #002aff;
+}
+
+.login-message {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.error-message {
+  background-color: #ffe0e0;
+  color: #d8000c;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #757070;
+  font-size: 14px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.login-button:hover {
+  background-color: #000000;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.divider span {
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+  line-height: 0.1em;
+  margin: 0 10px;
+}
+
+.google-login {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.google-login:hover {
+  background-color: #f0f0f0;
+}
+
+.login-footer {
+  margin-top: 20px;
+  font-size: 15px;
+  color: #000000;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: #0026ff;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.link-button:hover {
+  text-decoration: underline;
+}

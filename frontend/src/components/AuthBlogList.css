@@ -1,0 +1,106 @@
+.blog-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 720px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+/* Blog Card */
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e6e6e6;
+  cursor: pointer;
+  color: #242424;
+  transition: background 0.2s;
+}
+
+.blog-card:hover {
+  background: #fafafa;
+}
+
+/* Title */
+.blog-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #242424;
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* Blog Status (Draft/Published) */
+.blog-status {
+  font-size: 0.8rem;
+  color: #6b6b6b;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Meta Info (Author, Date) */
+.blog-meta {
+  font-size: 0.9rem;
+  color: #757575;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Actions (Edit/Delete) */
+.blog-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 0.6rem;
+}
+
+/* Buttons styled like Medium (subtle) */
+.edit-blog-btn,
+.delete-blog-btn {
+  background: transparent;
+  border: 1px solid #dcdcdc;
+  color: #555;
+  font-size: 0.85rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 9999px; /* pill shape */
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: all 0.2s;
+}
+
+.edit-blog-btn:hover,
+.delete-blog-btn:hover {
+  border-color: #1a8917;
+  color: #1a8917;
+}
+
+/* Spinner (unchanged but centered like Medium loading) */
+.spinner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  gap: 10px;
+  color: #757575;
+}
+
+.spinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid #ddd;
+  border-top: 3px solid #1a8917;
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
